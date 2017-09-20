@@ -4,8 +4,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Places to Visit in Georgia</title>
+	<style>
+		#gallery-wrapper{
+			text-align: center;
+		}
+		.thumb{
+			width: 15%;
+			border: 4px solid #0f0;
+		}
+		img{
+			/* if you use !important  at the end it's screaming so it'll override everything */
+			width: 1000px ; 
+		}
+	</style>
 </head>
 <body>
-	
+	<!-- a wrapper for the entire gallery -->
+	<!-- it does nothing but help us organize the page -->
+	<div id="gallery-wrapper">
+		<div id="top-section">
+			<h1>A photo gallery made with CSS, HTML, and a tiny bit of JS and lot of love</h1>			
+		</div>
+		<div id="middle-section">
+			<img src="./ga_pics/arabia_mnt.jpg" alt="" class="thumb" onmouseover="bigPic.src = this.src">
+			<img src="./ga_pics/callaway_gardens.jpg" alt="" class="thumb" onmouseover="bigPic.src = this.src">
+			<img src="./ga_pics/Etowah_Indian_Mounds.jpg" alt="" class="thumb" onmouseover="bigPic.src = this.src">
+			<img src="./ga_pics/prov_state_canyon.jpg" alt="" class="thumb" onmouseover="bigPic.src = this.src">
+			<img src="./ga_pics/wormsloe.jpg" alt="" class="thumb" onmouseover="bigPic.src = this.src">
+		</div>
+		<div id="bottom-section">
+			<img src="./ga_pics/arabia_mnt.jpg" alt="" name="bigPic">
+		</div>
+		<!-- if you create another div inside the container, its not going to chagne the height, it's only going to change
+		when you have something insdie -->
+	</div>
 </body>
 </html>
